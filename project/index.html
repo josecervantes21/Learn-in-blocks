@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy worker project</title>
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Nunito:wght@200&family=Open+Sans:wght@300;500&family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+    #fundamentos{
+        display: none;  
+    }
+</style>
+<style type='text/css'>
+    #perfecto{
+        display: none;
+    }
+</style>
+<body>
+    <header class='hero'>
+        <nav class:"nav container">
+        <div class="nav_logo">
+            <h2 class='title__title'><font size='100'>LAZY WORKER PROJECT</h2></font>
+            </div>
+            </h2>
+        </div>
+        </nav>
+        <section class="hero_container_ container">
+            <h1 class="hero__title">Learning blocks</h1>
+            <p class="hero__paragraph">Choose a Lazy person to do hard job because that person will fin an easy way to do it: Henry Ford</p>
+            <form>
+                <ul>
+                <div>
+                    <li for="iname"><font size='5'>¿Posees los conocimientos básicos de python?:</li></font>
+                    <button type='Si' onclick="resultado();">Si</button>
+                    <div id='perfecto'><b>Perfecto</b>
+                    <a href="https://automatetheboringstuff.com/2e/" target="_blank"</a></div>
+                    <button type="No" onclick="no();"><a href="https://automatetheboringstuff.com/2e/chapter1/" target="_blank">No</a></button>                    <div id="fundamentos">
+                    <a>Cursaras fundamentos de python: https://automatetheboringstuff.com/2e/</a></div></font>
+                    <li for="isurname"><font size='5'>Describe tu proyecto:</li></font>
+                    <input id='isurname' type+'text' name='isurname'>
+                    <button onclick="calculariname()"><font size='4.5'>enviar</button></font>
+                </form>
+        </section>
+        <script src='js/code.js'></script>
+        <script type='text/javascript'>
+            function no() {
+                document.getElementById('fundamentos').style.display='block';
+            }
+        </script>
+        <script type='text/javascript'>
+            function resultado() {
+                document.getElementById('perfecto').style.display='block';
+                
+            }
+        </script>
+          </script>
+          
+          
+        </section>
+    </header>
+</body>
+</html>
