@@ -105,5 +105,5 @@ const lg=document.createElement('li');
 lg.classList.add('list');
 var gui=document.createElement('a');
 var linkText=document.createTextNode('Controlling a keyboard and Mouse with GUI Automation');
-gui.appendChild(lg,linkText);
+gui.append(lg,linkText);
 gui.href='https://automatetheboringstuff.com/2e/chapter20/';
