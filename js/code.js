@@ -1,18 +1,5 @@
 function calculariname(){
     var isurname=document.getElementById('isurname').value; 
-    
-    file='Reading and writes file'.link(files)
-    org='Organizing files'.link(organizing)
-    webs='Web Scrapting'.link(web)
-    excels='Working with excel Spreadsheets'.link(excel)
-    pdfs='Working with pdf and word documents'.link(pdf)
-    cvss='Working with CVS files and JSON files'.link(cvs)
-    date='Keeping time Scheduling Task and Launching programs'.link(time)
-    emails='Sending Email and Text Messages'.link(email)
-    image='Manipulating images'.link(images)
-    mouse='Controlling a keyboard and Mouse with GUI Automation'.link(gui)
-    
-    
     array=[
     'archivo','archivos','folder','folders',
     'guardar','eliminar','documentos', 'zip','.zip', 'quitar',
@@ -29,33 +16,72 @@ function calculariname(){
     mix=[
       file,file,file,file,
       org,org,org,org,org,org,
-      webs,webs,
-      excels,excels,excels,
-      pdfs,pdfs,pdfs,pdfs,
-      cvss,cvss,
-      date,date,
-      emails,emails,emails,emails,
-      image,image,
-      mouse,mouse,mouse,mouse
+      web,web,
+      excel,excel,excel,
+      pdf,pdf,pdf,pdf,
+      cvs,cvs,
+      time,time,
+      email,email,email,email,
+      images,images,
+      gui,gui,gui,gui
     ]
     
     for (let i = 0; i < array.length; i++) {
         const element = array[i];
         if (isurname.toLowerCase().includes(element) ) {
             var resultado=document.getElementById('lazy')
-            resultado.innerHTML='Tus bloques de aprendizaje son <br/>'+mix[i]
+            document.body.appendChild(mix[i])
         }
     }
 }
 
 
-files='https://automatetheboringstuff.com/2e/chapter9/',
-organizing='https://automatetheboringstuff.com/2e/chapter10/'
-web='https://automatetheboringstuff.com/2e/chapter12/'
-excel='https://automatetheboringstuff.com/2e/chapter13/'
-pdf='https://automatetheboringstuff.com/2e/chapter15/'
-cvs='https://automatetheboringstuff.com/2e/chapter16/'
-time='https://automatetheboringstuff.com/2e/chapter17/'
-email='https://automatetheboringstuff.com/2e/chapter18/'
-images='https://automatetheboringstuff.com/2e/chapter19/'
-gui='https://automatetheboringstuff.com/2e/chapter20/'
+var file=document.createElement('a');
+var linkText=document.createTextNode('Reading and writes file');
+file.appendChild(linkText);
+file.href='https://automatetheboringstuff.com/2e/chapter9/';
+
+var org=document.createElement('a');
+var linkText=document.createTextNode('Organizing files');
+org.appendChild(linkText);
+org.href='https://automatetheboringstuff.com/2e/chapter10/';
+
+var web=document.createElement('a');
+var linkText=document.createTextNode('Web Scrapting');
+web.appendChild(linkText);
+web.href='https://automatetheboringstuff.com/2e/chapter12/';
+
+var excel=document.createElement('a');
+var linkText=document.createTextNode('Working with excel Spreadsheets');
+excel.appendChild(linkText);
+excel.href='https://automatetheboringstuff.com/2e/chapter13/';
+
+var pdf=document.createElement('a');
+var linkText=document.createTextNode('Working with pdf and word documents');
+pdf.appendChild(linkText);
+pdf.href='https://automatetheboringstuff.com/2e/chapter15/';
+
+var cvs=document.createElement('a');
+var linkText=document.createTextNode('Working with CVS files and JSON files');
+cvs.appendChild(linkText);
+cvs.href='https://automatetheboringstuff.com/2e/chapter16/';
+
+var time=document.createElement('a');
+var linkText=document.createTextNode('Keeping time Scheduling Task and Launching programs');
+time.appendChild(linkText);
+time.href='https://automatetheboringstuff.com/2e/chapter17/';
+
+var email=document.createElement('a');
+var linkText=document.createTextNode('Sending Email and Text Messages');
+email.appendChild(linkText);
+email.href='https://automatetheboringstuff.com/2e/chapter18/';
+
+var images=document.createElement('a');
+var linkText=document.createTextNode('Manipulating images');
+images.appendChild(linkText);
+images.href='https://automatetheboringstuff.com/2e/chapter19/';
+
+var gui=document.createElement('a');
+var linkText=document.createTextNode('Controlling a keyboard and Mouse with GUI Automation');
+gui.appendChild(linkText);
+gui.href='https://automatetheboringstuff.com/2e/chapter20/';
