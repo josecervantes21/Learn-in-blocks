@@ -1,43 +1,45 @@
 function calculariname(){
     var isurname=document.getElementById('isurname').value; 
     array=[
-    'archivo','archivos','folder','folders',
-    'guardar','eliminar','documentos', 'zip','.zip', 'quitar',
-    'web','pagina',
-    'excel','datos','data',
-    'pdf', 'pdfs','word', 'words',
-    'cvs','json', 
-    'fecha','fechas',
-    'correo','mensajes', 'mensaje','correos',
-    'imagen','imagenes',
-    'teclear','mouse','clicks','click'
+    ['archivo','archivos','folder','folders','file','files'],
+    ['guardar','eliminar','documentos', 'zip','.zip', 'quitar'],
+    ['web','pagina','página','HTML','html'],
+    ['excel','datos','data','enviar'],
+    ['pdf', 'pdfs','word', 'words','.pdf'],
+    ['cvs','json'], 
+    ['fecha','fechas','dates','date'],
+    ['correo','mensajes', 'mensaje','correos','enviar'],
+    ['imagen','imagenes'],
+    ['teclear','mouse','clicks','click']
     ]
 
     mix=[
-      file,file,file,file,
-      org,org,org,org,org,org,
-      web,web,
-      excel,excel,excel,
-      pdf,pdf,pdf,pdf,
-      cvs,cvs,
-      time,time,
-      email,email,email,email,
-      images,images,
-      gui,gui,gui,gui
+      file,
+      org,
+      web,
+      excel,
+      pdf,
+      cvs,
+      time,
+      email,
+      images,
+      gui,
     ]
     
     for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        if (isurname.toLowerCase().includes(element) ) {
-            var resultado=document.getElementById('lazy')
+        for (let j = 0; j < array.length; j++) {
+            const element = array[i][j];
+            if (isurname.toLowerCase().includes(element) ) {
+            var resultado=document.getElementById('project')
             document.body.appendChild(mix[i])
         }
+    }
     }
 }
 const lf=document.createElement('li');
 lf.classList.add('list');
 var file=document.createElement('a');
-var linkText=document.createTextNode('Reading and writes file    ');
+var linkText=document.createTextNode('Reading and writes file ');
 file.append(lf,linkText)
 file.href='https://automatetheboringstuff.com/2e/chapter9/';
 
@@ -45,7 +47,7 @@ file.href='https://automatetheboringstuff.com/2e/chapter9/';
 const lo=document.createElement('li');
 lo.classList.add('list');
 var org=document.createElement('a');
-var linkText=document.createTextNode('Organizing files    ');
+var linkText=document.createTextNode('Organizing files');
 org.append(lo,linkText);
 org.href='https://automatetheboringstuff.com/2e/chapter10/';
 
