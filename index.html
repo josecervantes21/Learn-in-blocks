@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Lazy worked project</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <style type="text/css">
     #No{
@@ -19,13 +20,13 @@
                 <div>
                     <p for="iname">¿Posees los conocimientos básicos de python?:</p>
                     <button type='Si' onclick="Si();">Si</button>
-                    <button type="No" onclick="No();">No</a></button>
-                    <div id='Si'>Perfecto</div>                      
-                    <div id="No"><a href="https://automatetheboringstuff.com/2e/">Cursaras fundamentos de python</a></div>
+                    <button type="No" onclick="No();">No</a></button>                    
                     <p for="isurname">Describe tu proyecto:</p>
                     <textarea id='isurname'  name='isurname' ></textarea>
                     <button onclick="calculariname()">enviar</button>
-                    <div id="project">Tus bloques de aprendizaje serán:</div>
+                    <div>Tus bloques de aprendizaje serán:</div>
+                    <div id='Si'>Perfecto</div>  
+                    <div class="No" id="No"><a href="https://automatetheboringstuff.com/2e/">Fundamentos de python</a></div>
         <script src='js/code.js'></script>
         <script type='text/javascript'>
             function No() {
