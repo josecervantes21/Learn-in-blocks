@@ -130,7 +130,7 @@
   transform: scale(1.3);
 }
 .No{
-  display: none;
+  display: block;
 }
 .starts{
   border: 0;
