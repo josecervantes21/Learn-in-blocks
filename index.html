@@ -19,9 +19,9 @@
                 <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
                 <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
                 <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div></div> 
-                <button type="button" id="No"></button>
-                <div class="start" ><img  src="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png"></div>  
-                  <div class="No">
+                <div class="start" ></div><button class="start" type="No" onclick="No();"><img  src="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png"></a></button></div>                
+                  
+                  <div id="No" class="No">
                 <div class="linea"></div>
                 <div class="divslab" id="divslab1"><p>Uso del if </p><button type="button" class="botones"></button></div>
                 <div class="divslab1" id="divslab2"><p>Uso del FOR</p><button type="button" class="botones"></button></div>
@@ -30,6 +30,7 @@
                 <div class="divslab" id="divslab5"><p>Comentarios</p><button type="button" class="botones"></button></div>
                 <div class="divslab1" id="divslab6"><button type="button" class="botones"></button></div>
               </div>
+        </div>
           
     <script>
         function No() {
@@ -140,8 +141,7 @@ function oprimir_btn(i) {
 
   } else {
     btn_correspondiente[i].style.background = "pink";
-    blocks.push(select_id("prueba").innerHTML= pregunta.name)
-    
+
   }
   for (let j = 0; j < 4; j++) {
     if (posibles_respuestas[j] == pregunta.respuesta) {

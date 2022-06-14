@@ -125,14 +125,12 @@
 .start{
   position: absolute;
   margin-left: 680px;
+  color: white;
 }
 .start:hover{
   transform: scale(1.3);
 }
 .No{
-  display: block;
-}
-.starts{
-  border: 0;
-  color: white;
+  display: none;
+  border: 0px;
 }
