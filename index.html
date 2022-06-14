@@ -1,42 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Lazy worked project</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Learn in blocks</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<style type="text/css">
-    #No{
-        display: none;  
-    }
-</style>
-<style type='text/css'>
-    #Si{
-        display: none;
-    }
-</style>
 <body>
-            <h1 >LAZY WORKED PROJECT</h1>
-            <p >Choose a Lazy person to do hard job because that person will fin an easy way to do it: Henry Ford</p>
-                <div>
-                    <p for="iname">¿Posees los conocimientos básicos de python?:</p>
-                    <button type='Si' onclick="Si();">Si</button>
-                    <button type="No" onclick="No();">No</a></button>                    
-                    <p for="isurname">Describe tu proyecto:</p>
-                    <textarea id='isurname'  name='isurname' ></textarea>
-                    <button onclick="calculariname()">enviar</button>
-                    <div>Tus bloques de aprendizaje serán:</div>
-                    <div id='Si'>Perfecto</div>  
-                    <div class="No" id="No"><a href="https://automatetheboringstuff.com/2e/">Fundamentos de python</a></div>
-        <script src='js/code.js'></script>
-        <script type='text/javascript'>
-            function No() {
+    <h1 class="title">Aprendizaje en bloques</h1>
+        <div>
+            <p >Prueba diagnostico PYTHON para conocer tus habilidades</p>
+            <div class="contenedor">
+              <div class="puntaje" id="puntaje"></div>
+                <div class="encabezado">
+                <div class="categoria" id="categoria"></div></div>
+                <div class="numero" id="numero" style="display: none"></div>
+                <div class="pregunta" id="pregunta"></div>
+                <img src="#" class="imagen" id="imagen">
+                <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
+                <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+                <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+                <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div></div> 
+                <button type="button" id="No"></button>
+                <div class="start" ><img  src="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png"></div>  
+                  <div class="No">
+                <div class="linea"></div>
+                <div class="divslab" id="divslab1"><p>Uso del if </p><button type="button" class="botones"></button></div>
+                <div class="divslab1" id="divslab2"><p>Uso del FOR</p><button type="button" class="botones"></button></div>
+                <div class="divslab" id="divslab3"><p>Tipos de datos</p><button type="button" class="botones"></button></div>
+                <div class="divslab1" id="divslab4"><p>Listas</p><button type="button" class="botones"></button></div>
+                <div class="divslab" id="divslab5"><p>Comentarios</p><button type="button" class="botones"></button></div>
+                <div class="divslab1" id="divslab6"><button type="button" class="botones"></button></div>
+              </div>
+          
+    <script>
+        function No() {
                 document.getElementById('No').style.display='block';
             }
-        </script>
-        <script type='text/javascript'>
-            function Si() {
-                document.getElementById('Si').style.display='block';
+        let preguntas_aleatorias = true;
+        let mostrar_pantalla_juego_términado = true;
+
+        window.onload = function () {
+        base_preguntas = readText("base-preguntas.json");
+        interprete_bp = JSON.parse(base_preguntas);
+        escogerPreguntaAleatoria();
+        };
+
+        let pregunta;
+        let posibles_respuestas;
+        btn_correspondiente = [
+        select_id("btn1"),
+        select_id("btn2"),
+        select_id("btn3"),
+        select_id("btn4")
+        ];
+        let npreguntas = [];
+
+        let preguntas_hechas = 0;
+        let preguntas_correctas = 0;
+
+        function escogerPreguntaAleatoria() {
+        let n;
+        if (preguntas_aleatorias) {
+            n = Math.floor(Math.random() * interprete_bp.length);
+        } else {
+            n = 0;
+        }
+
+        while (npreguntas.includes(n)) {
+            n++;
+            if (n >= interprete_bp.length) {
+            n = 0;
             }
+            if (npreguntas.length == interprete_bp.length) {
+
+            npreguntas = [];
+            }
+        }
+        npreguntas.push(n);
+        preguntas_hechas++;
+        if (preguntas_hechas>=5) {
+          select_id("blocks").innerHTML=blocks
+        }
+        escogerPregunta(n);
+        }
+
+function escogerPregunta(n) {
+  pregunta = interprete_bp[n];
+  select_id("categoria").innerHTML = pregunta.categoria;
+  select_id("pregunta").innerHTML = pregunta.pregunta;
+  select_id("numero").innerHTML = n;
+  let pc = preguntas_correctas;
+  if (preguntas_hechas > 1) {
+    select_id("puntaje").innerHTML = pc + "/" + (preguntas_hechas - 1);
+  } else {
+    select_id("puntaje").innerHTML = "";
+  }
+
+  style("imagen").objectFit = pregunta.objectFit;
+  desordenarRespuestas(pregunta);
+  if (pregunta.imagen) {
+    select_id("imagen").setAttribute("src", pregunta.imagen);
+    style("imagen").height = "130px";
+    style("imagen").width = "15%";
+  } else {
+    style("imagen").height = "0px";
+    style("imagen").width = "0px";
+    setTimeout(() => {
+      select_id("imagen").setAttribute("src", "");
+    }, 500);
+  }
+}
+
+function desordenarRespuestas(pregunta) {
+  posibles_respuestas = [
+    pregunta.respuesta,
+    pregunta.incorrecta1,
+    pregunta.incorrecta2,
+    pregunta.incorrecta3,
+  ];
+  posibles_respuestas.sort(() => Math.random() - 0.5);
+
+  select_id("btn1").innerHTML = posibles_respuestas[0];
+  select_id("btn2").innerHTML = posibles_respuestas[1];
+  select_id("btn3").innerHTML = posibles_respuestas[2];
+  select_id("btn4").innerHTML = posibles_respuestas[3];
+}
+
+let suspender_botones = false;
+let blocks=[]
+
+function oprimir_btn(i) {
+  if (suspender_botones) {
+    return;
+  }
+  suspender_botones = true;
+  if (posibles_respuestas[i] == pregunta.respuesta) {
+    preguntas_correctas++;
+    btn_correspondiente[i].style.background = "lightgreen";
+    
+
+  } else {
+    btn_correspondiente[i].style.background = "pink";
+    blocks.push(select_id("prueba").innerHTML= pregunta.name)
+    
+  }
+  for (let j = 0; j < 4; j++) {
+    if (posibles_respuestas[j] == pregunta.respuesta) {
+      btn_correspondiente[j].style.background = "lightgreen";
+      break;
+    }
+  }
+  setTimeout(() => {
+    reiniciar();
+    suspender_botones = false;
+  }, 1000);
+}
+
+// let p = prompt("numero")
+
+function reiniciar() {
+  for (const btn of btn_correspondiente) {
+    btn.style.background = "slategray";
+  }
+  escogerPreguntaAleatoria();
+}
+
+function select_id(id) {
+  return document.getElementById(id);
+}
+
+function style(id) {
+  return select_id(id).style;
+}
+
+function readText(ruta_local) {
+  var texto = null;
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", ruta_local, false);
+  xmlhttp.send();
+  if (xmlhttp.status == 200) {
+    texto = xmlhttp.responseText;
+  }
+  return texto;
+}
+
         </script>
 </body>
 </html>
