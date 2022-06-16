@@ -6,10 +6,11 @@
     "incorrecta1":"if x>10:",
     "incorrecta2":"x>10(if):",
     "incorrecta3":"(ifx>10){}",
-    "imagen":"",
+    "imagen":"https://datos.gob.es/sites/default/files/styles/blog_image/public/blog/image/imagen_post_26.jpg?itok=cJ2FHxpK",
     "src":"https://www.notion.so/Uso-del-if-65c14ec239524fcc85d50bac71d97b9f",
     "object_fit":"cover",
-    "name":"Uso del IF"
+    "name":"Uso del if",
+    "slab":"divslab1"
 },
 {
     "categoria": "Programación en python",
@@ -18,10 +19,11 @@
     "incorrecta1":"for i in range(x):",
     "incorrecta2":"(for x>10):",
     "incorrecta3":"for i in range:",
-    "imagen":"",
+    "imagen":"https://datos.gob.es/sites/default/files/styles/blog_image/public/blog/image/imagen_post_26.jpg?itok=cJ2FHxpK",
     "src":"https://tattered-glazer-b75.notion.site/Ciclo-for-1d170d5ff9df4b9d8f85405c5df5dffb",
     "object_fit":"cover",
-    "name":"Uso del FOR"
+    "name":"Uso del For",
+    "slab":"divslab2"
 },
 {
     "categoria": "Programación en python",
@@ -33,7 +35,8 @@
     "src":"https://tattered-glazer-b75.notion.site/Tipos-de-datos-beb8e0cc2e6a4ee5ae6369e1905d48bd",
     "imagen":"https://datos.gob.es/sites/default/files/styles/blog_image/public/blog/image/imagen_post_26.jpg?itok=cJ2FHxpK",
     "object_fit":"cover",
-    "name":"Tipos de datos"
+    "name":"Tipos de datos",
+    "slab":"divslab3"
 },
 {
     "categoria": "Programación en python",
@@ -45,7 +48,8 @@
     "src":"https://tattered-glazer-b75.notion.site/Listas-92fd9faf5c414a868ed6ffc114af4ade",
     "imagen":"https://img.freepik.com/vector-gratis/ilustracion-lista-tareas-pendientes_53876-28518.jpg?w=2000",
     "object_fit":"cover",
-    "name":"Listas"
+    "name":"listas",
+    "slab":"divslab4"
 },
 {
     "categoria": "Programación en python",
@@ -57,6 +61,7 @@
     "imagen":"https://definicion.de/wp-content/uploads/2010/08/comentario-1.png",
     "object_fit":"cover",
     "src":"https://tattered-glazer-b75.notion.site/Comentarios-437fd3204ece4a8f99d8e034cc44bcb6",
-    "name":"Comentarios"
+    "name":"Comentarios",
+    "slab":"divslab5"
 }
 ]
