@@ -7,7 +7,8 @@
 <body>
     <h1 class="title">Aprendizaje en bloques</h1>
         <div>
-            <p >Prueba diagnostico PYTHON para conocer tus habilidades o de lo contrario, da click en la imagen para empezar tú curso desde cero</p>
+            <p id="title">Prueba diagnostico PYTHON para conocer tus habilidades o de lo contrario, da click en la imagen para empezar tú curso desde cero</p>
+            <p id="instrucciones" class="instrucciones">Tú recorrido de aprendizaje serán los de color azul sin embargo puedes cursar todos los slabs :D</p>
             <div class="resultados" id="resultados"><p class="textos">Aqui es donde todo comienza, da click en la imagen para conocer tú ruta de aprendizaje:</p></div> 
             <div class="contenedor" id="contenedor">
               <div class="puntaje" id="puntaje"></div>
@@ -38,6 +39,8 @@
                 document.getElementById('No').style.display='block';
                 document.getElementById('resultados').style.display='none';
                 document.getElementById('contenedor').style.display='none';
+                document.getElementById('instrucciones').style.display='block';
+                document.getElementById('title').style.display='none';
                 for (let i = 0; i < blocks.length; i++) {
                   document.getElementById(blocks[i]).style.background='slategray'
                   document.getElementById(blocks[i]).style.imagen=img[i]
