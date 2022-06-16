@@ -63,5 +63,17 @@
     "src":"https://tattered-glazer-b75.notion.site/Comentarios-437fd3204ece4a8f99d8e034cc44bcb6",
     "name":"Comentarios",
     "slab":"divslab5"
+},{
+    "categoria": "Programación en python",
+    "pregunta":"¿Cómo es la estructura para importar la libreria de matematicas",
+    "respuesta":"import math",
+    "incorrecta1":"importar matematicas",
+    "incorrecta2":"libreria math",
+    "incorrecta3":"libreria matematicas",
+    "imagen":"https://definicion.de/wp-content/uploads/2010/08/comentario-1.png",
+    "object_fit":"cover",
+    "src":"https://tattered-glazer-b75.notion.site/Comentarios-437fd3204ece4a8f99d8e034cc44bcb6",
+    "name":"Comentarios",
+    "slab":"divslab6"
 }
 ]
