@@ -6,11 +6,12 @@
     "incorrecta1":"if x>10:",
     "incorrecta2":"x>10(if):",
     "incorrecta3":"(ifx>10){}",
-    "imagen":"https://datos.gob.es/sites/default/files/styles/blog_image/public/blog/image/imagen_post_26.jpg?itok=cJ2FHxpK",
+    "imagen":"/assets/imgif.gif",
     "src":"https://www.notion.so/Uso-del-if-65c14ec239524fcc85d50bac71d97b9f",
     "object_fit":"cover",
     "name":"Uso del if",
-    "slab":"divslab1"
+    "slab":"divslab1",
+    "color":"blue"
 },
 {
     "categoria": "Programación en python",
@@ -19,11 +20,12 @@
     "incorrecta1":"for i in range(x):",
     "incorrecta2":"(for x>10):",
     "incorrecta3":"for i in range:",
-    "imagen":"https://datos.gob.es/sites/default/files/styles/blog_image/public/blog/image/imagen_post_26.jpg?itok=cJ2FHxpK",
-    "src":"https://tattered-glazer-b75.notion.site/Ciclo-for-1d170d5ff9df4b9d8f85405c5df5dffb",
+    "imagen":"/assets/imgfor.gif",
+    "src":"/imgfor.gif",
     "object_fit":"cover",
     "name":"Uso del For",
-    "slab":"divslab2"
+    "slab":"divslab2",
+    "color":"blue"
 },
 {
     "categoria": "Programación en python",
@@ -36,7 +38,8 @@
     "imagen":"https://datos.gob.es/sites/default/files/styles/blog_image/public/blog/image/imagen_post_26.jpg?itok=cJ2FHxpK",
     "object_fit":"cover",
     "name":"Tipos de datos",
-    "slab":"divslab3"
+    "slab":"divslab3",
+    "color":"blue"
 },
 {
     "categoria": "Programación en python",
@@ -49,7 +52,8 @@
     "imagen":"https://img.freepik.com/vector-gratis/ilustracion-lista-tareas-pendientes_53876-28518.jpg?w=2000",
     "object_fit":"cover",
     "name":"listas",
-    "slab":"divslab4"
+    "slab":"divslab4",
+    "color":"blue"
 },
 {
     "categoria": "Programación en python",
@@ -62,18 +66,20 @@
     "object_fit":"cover",
     "src":"https://tattered-glazer-b75.notion.site/Comentarios-437fd3204ece4a8f99d8e034cc44bcb6",
     "name":"Comentarios",
-    "slab":"divslab5"
+    "slab":"divslab5",
+    "color":"blue"
 },{
     "categoria": "Programación en python",
-    "pregunta":"¿Cómo es la estructura para importar la libreria de matematicas",
+    "pregunta":"¿Cómo es la estructura para importar la libreria de matematicas?",
     "respuesta":"import math",
     "incorrecta1":"importar matematicas",
     "incorrecta2":"libreria math",
     "incorrecta3":"libreria matematicas",
-    "imagen":"https://definicion.de/wp-content/uploads/2010/08/comentario-1.png",
+    "imagen":"/assets/imgimp.gif",
     "object_fit":"cover",
     "src":"https://tattered-glazer-b75.notion.site/Comentarios-437fd3204ece4a8f99d8e034cc44bcb6",
     "name":"Comentarios",
-    "slab":"divslab6"
+    "slab":"divslab6",
+    "color":"blue"
 }
 ]

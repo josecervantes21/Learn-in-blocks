@@ -2,203 +2,43 @@
 <html lang="en">
 <head>
   <title>Learn in blocks</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <link rel="js" type="js" href="js/code.js">
 </head>
-<body>
+<body class='body'id="body">
+  <img src="https://cimalxplab.mx/excel-deck/img/logos/lxlab.png" style="height: 60px;">
+  <img src="assets/Imagen1.png">
     <h1 class="title">Aprendizaje en bloques</h1>
         <div>
             <p id="title">Prueba diagnostico PYTHON para conocer tus habilidades o de lo contrario, da click en la imagen para empezar tú curso desde cero</p>
             <p id="instrucciones" class="instrucciones">Tú recorrido de aprendizaje serán los de color azul sin embargo puedes cursar todos los slabs :D</p>
-            <div class="resultados" id="resultados"><p class="textos">Aqui es donde todo comienza, da click en la imagen para conocer tú ruta de aprendizaje:</p></div> 
+            <div class="quizz" id="quizz" onclick="quizz()" style="color: white;">Toma tú quizz aquí</div>
             <div class="contenedor" id="contenedor">
-              <div class="puntaje" id="puntaje"></div>
-                <div class="encabezado">
-                <div class="categoria" id="categoria"></div></div>
-                <div class="numero" id="numero" style="display: none"></div>
-                <div class="pregunta" id="pregunta"></div>
+            <div class="puntaje" id="puntaje"></div>
+            <div class="encabezado">
+            <div class="categoria" id="categoria"></div></div>
+            <div class="numero" id="numero" style="display: none"></div>
+            <div class="pregunta" id="pregunta"></div>
                 <img src="#" class="imagen" id="imagen">
                 <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
                 <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
                 <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
                 <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
               </div>
-                <div class="start" ></div><button class="start" type="No" onclick="No();"><img class="imagenes" src="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png"></a></button></div>                
-                  <div id="No" class="No">
-                <div class="linea"></div>
-                <div class="divslab" id="divslab1"><p>Uso del if</p><button type="button" class="botones"></button></div>
-                <div class="divslab1" id="divslab2"><p>Uso del for</p><button type="button" class="botones"></button></div>
-                <div class="divslab" id="divslab3"><p>Tipos de datos</p><button type="button" class="botones"></button></div>
-                <div class="divslab1" id="divslab4"><p>listas</p><button type="button" class="botones"></button></div>
-                <div class="divslab" id="divslab5"><p>Comentarios</p><button type="button" class="botones"></button></div>
-                <div class="divslab1" id="divslab6"><p>Import</p><button type="button" class="botones"></button></div>
-              </div>
-        </div>
-          
-    <script>
-        function No() {
-                document.getElementById('No').style.display='block';
-                document.getElementById('resultados').style.display='none';
-                document.getElementById('contenedor').style.display='none';
-                document.getElementById('instrucciones').style.display='block';
-                document.getElementById('title').style.display='none';
-                for (let i = 0; i < blocks.length; i++) {
-                  document.getElementById(blocks[i]).style.background='slategray'
-                  document.getElementById(blocks[i]).style.imagen=img[i]
-                }
-                
-              }
-        
-        let preguntas_aleatorias = true;
-        let mostrar_pantalla_juego_términado = true;
+              <div class="start" ></div><img class="imagenes" id="imgnc" src="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png"></div>                
+              <div id="No" class="No">
+            <div class="linea"></div>
+            <div class="divslab" id="divslab1" ><img class='sized'src="/assets/imgif.gif"><p class="parrafo">Uso del if</p><button id="btones1" type="button" class="botones" onclick="usodelif()"><i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i></button></div>
+            <div class="divslab1" id="divslab2" onclick="usodelfor()"><img class='sized'src="/assets/imgfor.gif"><p class="parrafo">Uso del for</p><button id="btones2" type="button" class="botones" onclick="usodelfor()"><i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i></button></div>
+            <div class="divslab" id="divslab3" onclick="tiposdedatos()"><img class='sized'src="/assets//imgdt.gif"><p class="parrafo">Tipos de datos</p><button id="btones3" type="button" class="botones"><i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i></button></div>
+            <div class="divslab1" id="divslab4" onclick="listas()"><img class='sized'src="/assets//imglist.gif"><p class="parrafo">listas</p><button id="btones4" type="button" class="botones" onclick="listas()"><i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i></button></div>
+            <div class="divslab" id="divslab5" onclick="comentarios()"><img class='sized'src="/assets//imgcm.gif"><p class="parrafo">Comentarios</p><button type="button" id="btones5" class="botones" onclick="comentarios()"><i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i></button></div>
+            <div class="divslab1" id="divslab6" onclick="importar()"><img class='sized'src="/assets//imgimp.gif"><p class="parrafo">Import</p><button type="button" id="btones6" class="botones" onclick="importar()"><i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i></button></div>
+          </div>
+    </div>
+        <script src='js/code.js'></script>
         
         
-        window.onload = function () {
-        base_preguntas = readText("base-preguntas.json");
-        interprete_bp = JSON.parse(base_preguntas);
-        escogerPreguntaAleatoria();
-        };
-
-        let pregunta;
-        let posibles_respuestas;
-        btn_correspondiente = [
-        select_id("btn1"),
-        select_id("btn2"),
-        select_id("btn3"),
-        select_id("btn4")
-        ];
-        let npreguntas = [];
-        let preguntas_hechas = 0;
-        let preguntas_correctas = 0;
-
-        function escogerPreguntaAleatoria() {
-          let n;
-          if (preguntas_aleatorias) {
-            n = Math.floor(Math.random() * interprete_bp.length);
-        } else {
-            n = 0;
-        }
-
-        while (npreguntas.includes(n)) {
-            n++;
-            if (n >= interprete_bp.length) {
-            n = 0;
-            }
-            if (npreguntas.length == interprete_bp.length) {
-
-              npreguntas = [];
-            }
-          }
-          npreguntas.push(n);
-          preguntas_hechas++;
-          if (preguntas_hechas==6) {
-            document.getElementById('contenedor').style.display='none';
-            document.getElementById('resultados').style.display='block';
-          }
-
-        escogerPregunta(n)
-      }
-      
-      function escogerPregunta(n) {
-        pregunta = interprete_bp[n];
-        select_id("categoria").innerHTML = pregunta.categoria;
-        select_id("pregunta").innerHTML = pregunta.pregunta;
-        select_id("numero").innerHTML = n;
-        let pc = preguntas_correctas;
-        if (preguntas_hechas > 1) {
-          select_id("puntaje").innerHTML = pc + "/" + (preguntas_hechas - 1);
-        } else {
-    select_id("puntaje").innerHTML = "";
-  }
-
-  style("imagen").objectFit = pregunta.objectFit;
-  desordenarRespuestas(pregunta);
-  if (pregunta.imagen) {
-    select_id("imagen").setAttribute("src", pregunta.imagen);
-    style("imagen").height = "130px";
-    style("imagen").width = "15%";
-  } else {
-    style("imagen").height = "0px";
-    style("imagen").width = "0px";
-    setTimeout(() => {
-      select_id("imagen").setAttribute("src", "");
-    }, 500);
-  }
-}
-
-function desordenarRespuestas(pregunta) {
-  posibles_respuestas = [
-    pregunta.respuesta,
-    pregunta.incorrecta1,
-    pregunta.incorrecta2,
-    pregunta.incorrecta3,
-  ];
-  posibles_respuestas.sort(() => Math.random() - 0.5);
-  
-  select_id("btn1").innerHTML = posibles_respuestas[0];
-  select_id("btn2").innerHTML = posibles_respuestas[1];
-  select_id("btn3").innerHTML = posibles_respuestas[2];
-  select_id("btn4").innerHTML = posibles_respuestas[3];
-}
-
-let suspender_botones = false;
-let blocks=[]
-let img=[]
-function oprimir_btn(i) {
-  if (suspender_botones) {
-    return;
-  }
-  suspender_botones = true;
-  if (posibles_respuestas[i] == pregunta.respuesta) {
-    preguntas_correctas++;
-    btn_correspondiente[i].style.background = "lightgreen";
-    
-    
-  } else {
-    btn_correspondiente[i].style.background = "pink";
-    blocks.push(pregunta.slab)
-    img.push(pregunta.imagen)
-
-  for (let j = 0; j < 4; j++) {
-    if (posibles_respuestas[j] == pregunta.respuesta) {
-      btn_correspondiente[j].style.background = "lightgreen";
-      break;
-    }
-  }
-}
-  setTimeout(() => {
-    reiniciar();
-    suspender_botones = false;
-  }, 1000);
-}
-
-// let p = prompt("numero")
-
-function reiniciar() {
-  for (const btn of btn_correspondiente) {
-    btn.style.background = "slategray";
-  }
-  escogerPreguntaAleatoria();
-}
-
-function select_id(id) {
-  return document.getElementById(id);
-}
-
-function style(id) {
-  return select_id(id).style;
-}
-
-function readText(ruta_local) {
-  var texto = null;
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", ruta_local, false);
-  xmlhttp.send();
-  if (xmlhttp.status == 200) {
-    texto = xmlhttp.responseText;
-  }
-  return texto;
-}
-
-        </script>
 </body>
 </html>

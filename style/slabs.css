@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+*{
+    transition: all 0.15s;
+}
+.simulator{
+    position: absolute;
+    margin: 5px;
+}
+.title{
+    margin: 30px;
+}
+.texto{
+    margin-left: 25px;
+    line-height: 30px;
+    margin: 50px;
+}
+.cimaimagen:hover{
+    transform: scale(1.5);
+}
