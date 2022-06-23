@@ -11,7 +11,10 @@
 .title{
   margin-top: 0;
 }
-
+.bi bi-arrow-right{
+  font-size: 24px;
+  color: white;
+}
   .contenedor {
     width: 98vw;
     display: inline-flex;
@@ -125,7 +128,6 @@
     background-color: rgb(59, 59, 59);
     height: 1300px;
     position: absolute;
-    width: 0.01mm;
     margin-left: 665px;
     margin-block-start: 175px;
     margin-block-end: 280px;
@@ -175,11 +177,6 @@
 }
 .start:hover{
   transform: scale(1.3);
-}
-.No{
-  display: block;
-  border: 0px;
-  
 }
 .sized{
   height: 220px;
