@@ -132,7 +132,15 @@
     margin-block-start: 175px;
     margin-block-end: 280px;
   }
-  .linea:hover{
+  .v-line{
+    border-left: thick solid #000;
+    height: 1350px;
+    left: 50%;
+    position: absolute;
+    margin-top: 110px;
+    left: 50.4%;
+   }
+  .v-line:hover{
     transform: scale(1.05);
   }
   .divslab:hover {
@@ -188,7 +196,7 @@
 .imagenes{
   align-items: center;
   margin-left: 640px;
-  margin-top: 60px;
+  margin-top: 30px;
   height: 75px;
   position: absolute;
   align-content: center;
