@@ -39,15 +39,24 @@ print(var[0]) <br>
 1 #Respuesta o impresion <br>
 <br>
 En donde la secuencia que python lee es desde 0 el cual será el valor 1, el 1 será el 2 y así sucesivamente. Aqui imprimirmos solo un dato y el mensaje que dará en la consola será 1.
-</p>
+</p>        <p>Click en la flecha para iniciar simulador</p>
+<div class="click" onclick="simulador()">
+    <i class="bi-arrow-down-square" style="font-size:24px" style="color: white;"></i>
+</div>
 <h2>
-    Ejemplo:
+    Ejemplo: 
 </h2>
+<div  id="simulador" style="display: none;">
+    
 <iframe src="https://trinket.io/embed/python/1b60fc2d73" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
 </body>
 <script>
     function home() {
         document.location.href = "/index.html"
     }  
+    function simulador() {
+        document.getElementById("simulador").style.display='block'
+    }
 </script>
 </html>

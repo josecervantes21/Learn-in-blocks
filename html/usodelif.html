@@ -64,15 +64,25 @@ siguiente y así con las demás. Si una de ellas es verdadera, se ejecuta la ram
 correspondiente, y la sentencia termina. Incluso si hay más de una condición que
 sea verdadera, sólo se ejecuta la primera que se encuentra.
     </p>
+    <p>Click en la flecha para iniciar simulador</p>
+    <div class="click" onclick="simulador()">
+        <i class="bi-arrow-down-square" style="font-size:24px" style="color: white;"></i>
+    </div>
     <h2>
-        Ejemplos: <br>
+        Ejemplo: 
     </h2>
+    <div  id="simulador" style="display: none;">
+        
     <iframe src="https://trinket.io/embed/python/e5fda92a5e" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
 </body>
 <script>
     function home() {
         document.location.href = "/index.html"
     }  
+    function simulador() {
+        document.getElementById("simulador").style.display='block'
+    }
 </script>
 
 </html>

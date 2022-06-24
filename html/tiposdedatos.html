@@ -47,15 +47,24 @@ Podemos visualizarlo mejor en un diagrama de flujo que nos permitira conocer com
 <br>
 Para esto no vamos a correrlo como normalmente lo hacemos, si no desplegamos nuestro menu y seleccionamos **"Consola"** o **"Console"**. Si deseamos visualizarlo en pantalla como siempre usamos una función que veremos más adelante y será print().
     </p>
+    <p>Click en la flecha para iniciar simulador</p>
+    <div class="click" onclick="simulador()">
+        <i class="bi-arrow-down-square" style="font-size:24px" style="color: white;"></i>
+    </div>
     <h2>
-        Ejemplo:
+        Ejemplo: 
     </h2>
+    <div  id="simulador" style="display: none;">
     <iframe src="https://trinket.io/embed/python/214c18a7ad" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
 </div>
 </body>
 <script>
     function home() {
         document.location.href = "/index.html"
     }  
+    function simulador() {
+        document.getElementById("simulador").style.display='block'
+    }
 </script>
 </html>

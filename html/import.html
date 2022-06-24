@@ -76,15 +76,25 @@ con la raíz cuadrada de dos dividida por dos:
 import math <br>
 math.sqrt(2) / 2.0 <br>
 0.707106781186547 <br>
+<p>Click en la flecha para iniciar simulador</p>
+<div class="click" onclick="simulador()">
+    <i class="bi-arrow-down-square" style="font-size:24px" style="color: white;"></i>
+</div>
 <h2>
-    Ejemplo:
+    Ejemplo: 
 </h2>
+<div  id="simulador" style="display: none;">
+    
 <iframe src="https://trinket.io/embed/python/d984e56861" width="100%" height="350px" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
         </p>
         <script>
             function home() {
                 document.location.href = "/index.html"
-            }  
+            } 
+            function simulador() {
+                document.getElementById("simulador").style.display='block'
+            } 
         </script>
 </body>
 </html>
