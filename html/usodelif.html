@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso del IF</title>
     <link rel="stylesheet" type="text/css" href="/style/slabs.css">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
     <link rel="js" type="js" href="js/code.js">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 </head>
 <body>
     <img src="https://cimalxplab.mx/excel-deck/img/logos/lxlab.png" style="height: 60px;" onclick="home()" class="cimaimagen">
-    <img src="/assets/Imagen1.png">
     <h1 class="title">
-        SLAB USO DEL IF
+        Bloque del uso if
     </h1>
+    <div class="container-vid">
     <div class="video"><a href="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png"></a>
     <iframe width="700" height="420" src="https://www.youtube.com/embed/s3yaSStoSAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe class='simulator'src="https://trinket.io/embed/python/5d92522ed4" width="45%" height="420" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </div>
-    <h2>
+    </div>
+    <h2 class="texto">
         Texto:
     </h2>
     <p class="texto">
@@ -64,17 +66,21 @@ siguiente y así con las demás. Si una de ellas es verdadera, se ejecuta la ram
 correspondiente, y la sentencia termina. Incluso si hay más de una condición que
 sea verdadera, sólo se ejecuta la primera que se encuentra.
     </p>
-    <p>Click en la flecha para iniciar simulador</p>
+    <p class="texto">Click en la flecha para iniciar simulador</p>
     <div class="click" onclick="simulador()">
         <i class="bi-arrow-down-square" style="font-size:24px" style="color: white;"></i>
     </div>
-    <h2>
+    <h2 class="texto">
         Ejemplo: 
     </h2>
     <div  id="simulador" style="display: none;">
-        
     <iframe src="https://trinket.io/embed/python/e5fda92a5e" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </div>
+    <div class="divs">
+        <footer class="footer" class="p-4 mt-3 d-flex justify-content-center align-items-center">
+          Copyright 2021. Tecmilenio.
+        </footer>
+      </div>
 </body>
 <script>
     function home() {

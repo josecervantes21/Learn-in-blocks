@@ -4,6 +4,7 @@ function usodelif() {
 }
 (()=>{
     const color=JSON.parse(localStorage.getItem("slabs"))
+    const icono=JSON.parse(localStorage.getItem("iconos"))
     if(color===null){
       console.log(color)
     }
@@ -12,7 +13,15 @@ function usodelif() {
       document.getElementById('title').style.display='none';
       for (let i = 0; i < color.length; i++) {
         document.getElementById(color[i]).style.background='rgb(142, 190, 225)'
+        console.log(color[i])
       }
+      for (let i = 0; i < icono.length; i++) {
+        console.log(icono[i])
+        document.getElementById(icono[i]).style.display='none';
+        
+      }
+      
+
   }
 
 })()
@@ -145,6 +154,7 @@ select_id("btn4").innerHTML = posibles_respuestas[3];
 
 let suspender_botones = false;
 let img=[]
+let iconos=[]
 function oprimir_btn(i) {
 if (suspender_botones) {
 return;
@@ -158,6 +168,8 @@ else {
 btn_correspondiente[i].style.background = "pink";
 blocks.push(pregunta.slab)
 localStorage.setItem("slabs",JSON.stringify(blocks))
+iconos.push(pregunta.icon)
+localStorage.setItem("iconos",JSON.stringify(iconos))
 
 for (let j = 0; j < 4; j++) {
 if (posibles_respuestas[j] == pregunta.respuesta) {
@@ -204,4 +216,5 @@ function quizz() {
   document.getElementById("quizz").style.display='none'
   document.getElementById("contenedor").style.display='block'
   document.getElementById("body").style.background='rgb(182, 181, 179)'
+  document.getElementById("container").style.background='rgb(182, 181, 179)'
 }

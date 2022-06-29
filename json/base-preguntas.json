@@ -11,7 +11,8 @@
         "object_fit":"cover",
         "name":"Tipos de datos",
         "slab":"divslab1",
-        "color":"blue"
+        "color":"blue",
+        "icon":"icon1"
     },
     {
         "categoria": "Programación en python",
@@ -25,7 +26,8 @@
         "src":"https://tattered-glazer-b75.notion.site/Comentarios-437fd3204ece4a8f99d8e034cc44bcb6",
         "name":"Comentarios",
         "slab":"divslab2",
-        "color":"blue"
+        "color":"blue",
+        "icon":"icon2"
     },
     {
         "categoria": "Programación en python",
@@ -39,7 +41,8 @@
         "object_fit":"cover",
         "name":"listas",
         "slab":"divslab3",
-        "color":"blue"
+        "color":"blue",
+        "icon":"icon3"
     },
     {
     "categoria": "Programación en python",
@@ -53,7 +56,8 @@
     "object_fit":"cover",
     "name":"Uso del if",
     "slab":"divslab4",
-    "color":"blue"
+    "color":"blue",
+    "icon":"icon4"
 },
 {
     "categoria": "Programación en python",
@@ -67,7 +71,8 @@
     "object_fit":"cover",
     "name":"Uso del For",
     "slab":"divslab5",
-    "color":"blue"
+    "color":"blue",
+    "icon":"icon5"
 },
 { 
     "categoria": "Programación en python",
@@ -81,6 +86,7 @@
     "src":"https://tattered-glazer-b75.notion.site/Comentarios-437fd3204ece4a8f99d8e034cc44bcb6",
     "name":"Comentarios",
     "slab":"divslab6",
-    "color":"blue"
+    "color":"blue",
+    "icon":"icon6"
 }
 ]

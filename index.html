@@ -1,18 +1,21 @@
 <!DOCTYPE html>
+<link rel="js" type="js" href="js/code.js">
 <html lang="en">
 <head>
   <title>Learn in blocks</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-  <link rel="js" type="js" href="js/code.js">
 </head>
 <body class='body'id="body">
-  <img src="https://cimalxplab.mx/excel-deck/img/logos/lxlab.png" style="height: 60px;">
-  <img src="assets/Imagen1.png">
+  <img src="https://cimalxplab.mx/excel-deck/img/logos/lxlab.png" class="cimaimg" style="height: 60px;">
     <h1 class="title">Aprendizaje en bloques</h1>
         <div>
-            <p id="title">Prueba diagnostico PYTHON para conocer tus habilidades o de lo contrario, da click en la imagen para empezar tú curso desde cero</p>
-            <p id="instrucciones" class="instrucciones">Tú recorrido de aprendizaje serán los de color azul sin embargo puedes cursar todos los slabs :D</p>
+            <p id="title" class="instrucciones1" style="margin-top: 10px;">Prueba diagnostico PYTHON para conocer tus habilidades o de lo contrario, da click en la imagen para empezar tú curso desde cero</p>
+            <div class="instructions" id="instrucciones" style="display: none;">
+              <div class="color" style="background-color: rgb(142, 190, 225);"></div>
+              <p class="left-instrucciones" style="margin-left: 25px;">Los bloques del color azul es tú ruta de aprendizaje. </p>
+              <div class="color" style="background-color: rgb(182, 181, 179); margin-top: 10px;"></div>
+              <p id="instrucciones" style="margin-left: 25px;margin-top: 10px;">Los bloques de color gris son las habilidades que ya posees por lo cual no hay necesidad de cursarlo.</p></div>
             <div class="quizz" id="quizz" onclick="quizz()" style="color: white;">Toma tú quizz aquí</div>
             <div class="contenedor" id="contenedor">
             <div class="puntaje" id="puntaje"></div>
@@ -26,57 +29,74 @@
                 <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
                 <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
               </div>
-              <div class="container">
+              <div class="container" id="container">
                 <img class="imagenes" id="imgnc" src="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png">
                 <div class="v-line"></div>
                 <li class="divslab" id="divslab1" onclick="tiposdedatos()">
+                  <div id="icon1" style="display: block;">
+                  <i class="bi-bookmark-check-fill"  id="icon"></i>
+                </div>
                   <img class='sized'src="/assets//imgdt.gif">
                   <p class="parrafo">Tipos de datos</p>
                   <button type="button" class="botones" onclick="tiposdedatos()"><i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i>
                   </button>
                 </li>
                 <li class="divslab1" id="divslab2" onclick="comentarios()">
+                  <div id="icon2" style="display: block;">
+                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  </div>
                 <img class='sized'src="/assets//imgcm.gif">
                 <p class="parrafo">Comentarios</p>
                   <button type="button" class="botones" onclick="comentarios()">
                     <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
                     </i></button></li>
-                    <li class="divslab" id="divslab3" onclick="listas()">
-                      <img class='sized'src="/assets//imglist.gif">
-                      <p class="parrafo">listas</p>
-                      <button  type="button" class="botones" onclick="listas()">
-                        <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
-                      </i></button>
-                      </li>
-                      <li class="divslab1" id="divslab4" onclick="usodelif()" >
-                        <img class='sized'src="/assets/imgif.gif">
-                        <p class="parrafo">Uso del if</p>
-                        <button type="button" class="botones" onclick="usodelif()">
-                        <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i>
-                      </button></li>
-                      <li class="divslab" id="divslab5" onclick="usodelfor()">
-                        <img class='sized'src="/assets/imgfor.gif">
-                        <p class="parrafo">Uso del for</p><button  type="button" class="botones" onclick="usodelfor()">
-                        <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
-                        </i></button></li>
-                        <li class="divslab1" id="divslab6" onclick="importar()">
-                        <img class='sized'src="/assets//imgimp.gif">
-                        <p class="parrafo">Import</p>
-                        <button type="button" class="botones" onclick="importar()">
-                         <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
-                        </i></button></li>
-                      </div>
-            
+                <li class="divslab" id="divslab3" onclick="listas()">
+                  <div id="icon3" style="display: block;">
+                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  </div>
+                <img class='sized'src="/assets//imglist.gif">
+                <p class="parrafo">listas</p>
+                  <button  type="button" class="botones" onclick="listas()"> 
+                    <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
+                    </i></button></li>
+                <li class="divslab1" id="divslab4" onclick="usodelif()" >
+                  <div id="icon4" style="display: block;">
+                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  </div>
+                <img class='sized'src="/assets/imgif.gif">
+                <p class="parrafo">Uso del if</p>
+                  <button type="button" class="botones" onclick="usodelif()">   
+                    <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
+                    </i></button></li>
+                <li class="divslab" id="divslab5" onclick="usodelfor()">
+                  <div id="icon5" style="display: block;">
+                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  </div>
+                <img class='sized'src="/assets/imgfor.gif">
+                <p class="parrafo">Uso del for</p>
+                  <button  type="button" class="botones" onclick="usodelfor()">
+                    <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
+                    </i></button></li>
+                <li class="divslab1" id="divslab6" onclick="importar()">
+                  <div id="icon6" style="display: block;">
+                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  </div>
+                <img class='sized'src="/assets//imgimp.gif">
+                <p class="parrafo">Import</p>
+                  <button type="button" class="botones" onclick="importar()">
+                    <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
+                    </i></button></li>
+                <li class="endimg"><img class="endimg" src="https://cimalxplab.mx/excel-deck/img/shapes/cross.png" alt="">
+                </li>
+              </div>
           </div>
-          
-          
     </div>
-    <li class="endimg"><img class="endimg" src="https://cimalxplab.mx/excel-deck/img/shapes/cross.png" alt="">
-      <footer class="p-4 mt-3 d-flex justify-content-center align-items-center" style="background-color: gray;">
-        Copyright 2021. Tecmilenio.
-      </footer>
-    </li>
+    <div class="divs">
+    <footer class="footer" class="p-4 mt-3 d-flex justify-content-center align-items-center">
+      Copyright 2022. Tecmilenio.
+    </footer>
+  </div>
         <script src='js/code.js'></script>
 
-</body>
-</html>
+      </body>
+      </html>
