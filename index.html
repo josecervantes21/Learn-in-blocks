@@ -17,72 +17,110 @@
               <div class="color" style="background-color: rgb(182, 181, 179); margin-top: 10px;"></div>
               <p id="instrucciones" style="margin-left: 25px;margin-top: 10px;">Los bloques de color gris son las habilidades que ya posees por lo cual no hay necesidad de cursarlo.</p></div>
             <div class="quizz" id="quizz" onclick="quizz()" style="color: white;">Toma tú quizz aquí</div>
-            <div class="contenedor" id="contenedor">
-            <div class="puntaje" id="puntaje"></div>
-            <div class="encabezado">
-            <div class="categoria" id="categoria"></div></div>
-            <div class="numero" id="numero" style="display: none"></div>
-            <div class="pregunta" id="pregunta"></div>
+            <div class="container-quizz" style="display: none;" id="contenedor">
+              <div class="puntaje" id="puntaje"></div>
+              <div class="encabezado">
+                <div class="categoria" id="categoria"></div></div>
+                <div class="numero" id="numero" style="display: none"></div>
+                <div class="pregunta" id="pregunta"></div>
                 <img src="#" class="imagen" id="imagen">
                 <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
-                <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
-                <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
-                <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+                  <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+                  <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+                  <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
               </div>
               <div class="container" id="container">
                 <img class="imagenes" id="imgnc" src="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png">
                 <div class="v-line"></div>
                 <li class="divslab" id="divslab1" onclick="tiposdedatos()">
-                  <div id="icon1" style="display: block;">
-                  <i class="bi-bookmark-check-fill"  id="icon"></i>
-                </div>
-                  <img class='sized'src="/assets//imgdt.gif">
+                  <div class="checks">
+                    <div id="icon1" style="display: block;">
+                    <img class="icon" src="assets/icon/done.png" alt=""></i>
+                  </div>
+                  <div class="icon" style="display: none;" id="iconch1">
+                    <img class="icon" src="assets/icon/check.png" alt="">
+                  </div>
+                  </div>
                   <p class="parrafo">Tipos de datos</p>
+                  <div class="blocks">
+                    <img class='sized'src="assets/bloques/imgdt.gif">
+                  </div>
+               
+                  
                   <button type="button" class="botones" onclick="tiposdedatos()"><i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" ></i>
                   </button>
                 </li>
                 <li class="divslab1" id="divslab2" onclick="comentarios()">
-                  <div id="icon2" style="display: block;">
-                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  <div class="checks">
+                    <div id="icon2" style="display: block;"><img class="icon" src="assets/icon/done.png" alt=""></i>
+                    </div>
+                    <div class="icon" style="display: none;" id="iconch2">
+                      <img class="icon" src="assets/icon/check.png" alt="">
+                    </div>
                   </div>
-                <img class='sized'src="/assets//imgcm.gif">
-                <p class="parrafo">Comentarios</p>
+                  <p class="parrafo">Comentarios</p>
+                  <div class="blocks">
+                    <img class='sized'src="assets/bloques/imgcm.gif">
+                  </div>
                   <button type="button" class="botones" onclick="comentarios()">
                     <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
                     </i></button></li>
                 <li class="divslab" id="divslab3" onclick="listas()">
-                  <div id="icon3" style="display: block;">
-                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  <div class="checks">
+                    <div id="icon3" style="display: block;"><img class="icon" src="assets/icon/done.png" alt=""></i>
                   </div>
-                <img class='sized'src="/assets//imglist.gif">
-                <p class="parrafo">listas</p>
+                  <div class="icon" style="display: none;" id="iconch3">
+                    <img class="icon" src="assets/icon/check.png" alt="">
+                  </div></div>
+                  <p class="parrafo">Listas</p>
+                  <div class="blocks">
+                    <img class='sized'src="assets/bloques/imglist.gif">
+                  </div>
                   <button  type="button" class="botones" onclick="listas()"> 
                     <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
                     </i></button></li>
                 <li class="divslab1" id="divslab4" onclick="usodelif()" >
-                  <div id="icon4" style="display: block;">
-                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  <div class="checks">
+                    <div id="icon4" style="display: block;"><img class="icon" src="assets/icon/done.png" alt=""></i>
+                    </div>
+                    <div class="icon" style="display: none;" id="iconch4">
+                      <img class="icon" src="assets/icon/check.png" alt="">
+                    </div>
                   </div>
-                <img class='sized'src="/assets/imgif.gif">
-                <p class="parrafo">Uso del if</p>
+                  <p class="parrafo">Uso del if</p>
+                  <div class="blocks">
+                    <img class='sized'src="assets/bloques/imgif.gif">
+                  </div>
                   <button type="button" class="botones" onclick="usodelif()">   
                     <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
                     </i></button></li>
                 <li class="divslab" id="divslab5" onclick="usodelfor()">
-                  <div id="icon5" style="display: block;">
-                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  <div class="checks">
+                    <div id="icon5" style="display: block;"><img class="icon" src="assets/icon/done.png" alt=""></i>
+                    </div>
+                    <div class="icon" style="display: none;" id="iconch5">
+                      <img class="icon" src="assets/icon/check.png" alt="">
+                    </div>
                   </div>
-                <img class='sized'src="/assets/imgfor.gif">
-                <p class="parrafo">Uso del for</p>
+                  <p class="parrafo">Uso del for</p>
+                  <div class="blocks">
+                    <img class='sized'src="assets/bloques/imgfor.gif">
+                  </div>
                   <button  type="button" class="botones" onclick="usodelfor()">
                     <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
                     </i></button></li>
                 <li class="divslab1" id="divslab6" onclick="importar()">
-                  <div id="icon6" style="display: block;">
-                    <i class="bi-bookmark-check-fill"  id="icon"></i>
+                  <div class="checks">
+                    <div id="icon6" style="display: block;"><img class="icon" src="assets/icon/done.png" alt=""></i>
+                    </div>
+                    <div class="icon" style="display: none;" id="iconch6">
+                      
+                    </div>
                   </div>
-                <img class='sized'src="/assets//imgimp.gif">
-                <p class="parrafo">Import</p>
+                  <p class="parrafo">Import</p>
+                  <div class="blocks">
+                    <img class='sized'src="assets/bloques/imgdt.gif">
+                  </div>
                   <button type="button" class="botones" onclick="importar()">
                     <i class="bi bi-arrow-right" style="font-size:24px" style="color: white;" >
                     </i></button></li>

@@ -12,7 +12,8 @@
         "name":"Tipos de datos",
         "slab":"divslab1",
         "color":"blue",
-        "icon":"icon1"
+        "icon":"icon1",
+        "iconch":"iconch1"
     },
     {
         "categoria": "Programación en python",
@@ -27,7 +28,8 @@
         "name":"Comentarios",
         "slab":"divslab2",
         "color":"blue",
-        "icon":"icon2"
+        "icon":"icon2",
+        "iconch":"iconch2"
     },
     {
         "categoria": "Programación en python",
@@ -42,7 +44,8 @@
         "name":"listas",
         "slab":"divslab3",
         "color":"blue",
-        "icon":"icon3"
+        "icon":"icon3",
+        "iconch":"iconch3"
     },
     {
     "categoria": "Programación en python",
@@ -57,7 +60,8 @@
     "name":"Uso del if",
     "slab":"divslab4",
     "color":"blue",
-    "icon":"icon4"
+    "icon":"icon4",
+    "iconch":"iconch4"
 },
 {
     "categoria": "Programación en python",
@@ -72,7 +76,8 @@
     "name":"Uso del For",
     "slab":"divslab5",
     "color":"blue",
-    "icon":"icon5"
+    "icon":"icon5",
+    "iconch":"iconch5"
 },
 { 
     "categoria": "Programación en python",
@@ -87,6 +92,7 @@
     "name":"Comentarios",
     "slab":"divslab6",
     "color":"blue",
-    "icon":"icon6"
+    "icon":"icon6",
+    "iconch":"iconch6"
 }
 ]

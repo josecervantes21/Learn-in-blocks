@@ -10,6 +10,19 @@
 .title{
   margin-left: 20px;
 }
+.check{
+  background-color: #0000AF;
+  color: white;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+  float: right;
+  width: 100px;
+  margin-right: 15px;
+}
+.check:hover{
+  transform: scale(1.2);
+}
 .color{
   border-radius: 5px;
   height: 15px;
@@ -30,16 +43,24 @@
   font-size: 24px;
   color: white;
 }
+.container-quizz{
+  background-color: white;
+  width: 50vw;
+  height: 25%;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+}
 .contenedor {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: center;
-  background-color: white;
+  background-color: rgb(49, 49, 49);
   border-radius: 20px;
-  margin-left: 22%;
-  display: none;
+  margin: 0 auto;
+  position: relative;
   width: 50vw;
 }
 .encabezado {
@@ -50,7 +71,7 @@
   padding: 10px;
   border-radius: 10px;
   width: 500px;
-  margin-left: 12%;
+  margin: 0 auto;
   position: relative;
 }
 .quizz {
@@ -63,25 +84,31 @@
   height: 40px;
   padding: 10px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .categoria {
   color: white;
   text-align: left;
   display: block;
 }  
+.blocks{
+  height: 130px;
+  width: 185px;
+  margin: 0 auto;
+}
 .pregunta {
-  padding: 10px;
-  margin-left: 150px;
-  width: 400px;
-  text-align: cen;
-  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
 }
 .imagen {
   height: 0px;
   width: 0px;
   display: block;
-  margin-left: 280px;
+  margin: 0 auto;
   object-fit: cover;
+  margin-top: 10px;
 }
 .btn {
   background: slategray;
@@ -90,9 +117,11 @@
   margin: 5px;
   color: white;
   border-radius: 10px;
-  margin-left: 10%;
-  width: 520px;
-  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .btn:hover {
   transform: scale(1.05);
@@ -131,9 +160,20 @@
   list-style: none;
   background-color: #eeeeee;
 }
+.checks{
+  height: 50px;
+  position: absolute;
+  width: 40px;
+}
 .parrafo{
   text-align: center;
-  margin-top: 10px;
+  margin:0 auto;
+  position: relative;
+  padding: 10px;
+}
+.icon{
+  height: 40px;
+  position: absolute;
 }
 .v-line{
   height: 1300px;
@@ -156,16 +196,14 @@
 }
 .botones{
   background-color: #0000AF;
+  border-radius: 1.5rem;
+  border: 0px;
   width: 50px;
   height: 50px;
-  margin-top: 135px;
-  margin-left: 290px;
-  border-color: #0000AF;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-width: 0;
-  border-radius: 80px;
+  float: right;
+  clear: left;
+  position: relative;
+  cursor: pointer;
 }
 .bi-arrow-right {
   font-size: 1.25em;
@@ -179,10 +217,9 @@
   transform: scale(1.3);
 }
 .sized{
-  margin-left: 95px;
-  margin-top: 0px;
-  position: absolute;
-  height: 220px;
+  position: relative;
+  margin: 0 auto;
+  height: 160px;
 }
 .imagenes{
   left: 48%;
