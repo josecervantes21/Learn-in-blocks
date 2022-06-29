@@ -5,6 +5,7 @@ function usodelif() {
 (()=>{
     const color=JSON.parse(localStorage.getItem("slabs"))
     const icono=JSON.parse(localStorage.getItem("iconos"))
+    const iconch=JSON.parse(localStorage.getItem("iconch"))
     if(color===null){
       console.log(color)
     }
@@ -18,9 +19,11 @@ function usodelif() {
       for (let i = 0; i < icono.length; i++) {
         console.log(icono[i])
         document.getElementById(icono[i]).style.display='none';
-        
       }
-      
+      for (let j = 0; j < iconch.length; j++) {
+        console.log(iconch[j])
+        document.getElementById(iconch[j]).style.display="block"
+      }
 
   }
 
@@ -155,6 +158,7 @@ select_id("btn4").innerHTML = posibles_respuestas[3];
 let suspender_botones = false;
 let img=[]
 let iconos=[]
+let iconosch=[]
 function oprimir_btn(i) {
 if (suspender_botones) {
 return;
@@ -163,6 +167,7 @@ suspender_botones = true;
 if (posibles_respuestas[i] == pregunta.respuesta) {
 preguntas_correctas++;
 btn_correspondiente[i].style.background = "lightgreen";
+
 } 
 else {
 btn_correspondiente[i].style.background = "pink";
@@ -170,6 +175,8 @@ blocks.push(pregunta.slab)
 localStorage.setItem("slabs",JSON.stringify(blocks))
 iconos.push(pregunta.icon)
 localStorage.setItem("iconos",JSON.stringify(iconos))
+iconosch.push(pregunta.iconch)
+localStorage.setItem("iconch",JSON.stringify(iconosch))
 
 for (let j = 0; j < 4; j++) {
 if (posibles_respuestas[j] == pregunta.respuesta) {
