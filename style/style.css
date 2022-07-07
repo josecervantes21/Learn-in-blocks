@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Nunito:wght@200&family=Open+Sans:wght@300;500&family=Poppins&family=Rubik:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    transition: all 0.15s;
+}
+.title{
+  margin-left: 20px;
+}
+
+.color{
+  border-radius: 5px;
+  height: 15px;
+  position: static;
+  width: 15px;
+  vertical-align: middle;
+  padding: auto;
+  position: absolute;
+}
+.instructions{
+  padding: 30px;
+  height: 100px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.bi bi-arrow-right{
+  font-size: 24px;
+  color: white;
+}
+.container-quizz{
+  background-color: white;
+  width: 50vw;
+  height: 25%;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+.boton-intro{
+  background-color: white; 
+  border: 0px; 
+  cursor: pointer; 
+  float: right;
+  position: relative;
+  margin: 30px;
+}
+.v-intro{
+  margin-top: 30px;
+}
+.texto-intro{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.videos-intro{
+  margin-top: 55px;
+  height: 80%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.text{
+  position: absolute;
+  width: 100%;
+}
+.container-instructions{
+  text-align: center;
+  background-color: white;
+  width: 45vw;
+  height: 20%;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
+.contenedor {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: center;
+  background-color: rgb(49, 49, 49);
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  width: 50vw;
+}
+.encabezado {
+  background: slategrey;
+  min-width: 150px;
+  width: 70%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.quizz {
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  background: slategrey;
+  height: 40px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.instructions1{
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    background: slategrey;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+.categoria {
+  color: white;
+  text-align: left;
+  display: block;
+}  
+.blocks{
+  height: 130px;
+  width: 185px;
+  margin: 0 auto;
+}
+.pregunta {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+.imagen {
+  height: 0px;
+  width: 0px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  margin-top: 10px;
+}
+.btn {
+  background: slategray;
+  width: 60%;
+  padding: 7px;
+  margin: 5px;
+  color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+}  
+.numero{
+  opacity:0.3;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}  
+.puntaje{
+  color:black;
+  padding:10px;
+}
+
+.divslab{
+  background-color: rgb(238, 238, 238);
+  height: 225px;
+  width: 35%;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  float: right;
+  clear: left;
+  list-style: none;
+  margin-top: 40px;
+}
+.divslab1{
+  height: 225px;
+  width: 35%;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  clear: right;
+  float: left;
+  list-style: none;
+  background-color: #eeeeee;
+}
+.checks{
+  height: 50px;
+  position: absolute;
+  width: 40px;
+}
+.parrafo{
+  text-align: center;
+  margin:0 auto;
+  position: relative;
+  padding: 10px;
+}
+.icon{
+  height: 40px;
+  position: absolute;
+}
+.v-line{
+  height: 1300px;
+  left: 59%;
+  position: absolute;
+  margin-top: 110px;
+  left: 48%;
+  border-left: thick solid #000000;
+}
+.v-line:hover{
+  transform: scale(1.05);
+}
+.divslab:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+.divslab1:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+.botones{
+  background-color: #0000AF;
+  border-radius: 1.5rem;
+  border: 0px;
+  width: 50px;
+  height: 50px;
+  float: right;
+  clear: left;
+  position: relative;
+  cursor: pointer;
+}
+.bi-arrow-right {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #fff;
+}
+.botones:hover{
+  transform: scale(1.25);
+}
+.start:hover{
+  transform: scale(1.3);
+}
+.sized{
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+}
+.imagenes{
+  left: 48%;
+  top: -100px;
+  transform: translateX(-50%);
+  position: absolute;
+  margin-top: 100px;
+}
+.textos{
+  margin-top: 20px;
+}
+.resultados:hover{
+  transform: scale(1.3);
+}
+
+.instrucciones{
+  display: none;
+  font-size: 18px;
+  margin-left: 20px;
+  padding: 10px;
+}
+.instrucciones1{
+  font-size: 16px;
+  margin-left: 20px;
+}
+.imgen{
+  height: 70px;
+  margin-top: 0;
+}
+.quizz:hover{
+  transform: scale(1.1);
+}
+.container{
+  background-color: white;
+  width: 80%;
+  height: 1500px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  
+}
+.body{
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+.endimg{
+  position: absolute;
+  margin-top: 0;
+  left: 43.3%;
+  list-style: none;
+  margin-top: 700px;
+  
+}
+.p-4 {
+  padding: 1.5rem!important;
+}
+.mt-3 {
+  margin-top: 1rem!important;
+}
+.align-items-center {
+  align-items: center!important;
+}
+.justify-content-center {
+  justify-content: center!important;
+}
+.d-flex {
+  display: flex!important;
+}
+footer {
+  color: #939596;
+  background: #000;
+}
+.encuesta{
+  display: none;
+}
+.footer{
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: #cacaca;
+  vertical-align: 20px;
+}
+.divs{
+  height: 10px;
+}
+.bi-bookmark-check-fill{ 
+  position: absolute;
+  color: #07aa1d;
+  font-size: 50px;
+  margin-left: 5px;
+}
+.cimaimg{
+  margin: 15px;
+}

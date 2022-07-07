@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso del IF</title>
+    <link rel="stylesheet" type="text/css" href="/style/slabs.css">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link rel="js" type="js" href="js/code.js">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <img src="https://cimalxplab.mx/excel-deck/img/logos/lxlab.png" style="height: 60px;" onclick="home()" class="cimaimagen">
+    <h1 class="title">
+        Bloque del uso if
+    </h1>
+    <div class="container-vid">
+    <div class="video"><a href="https://cimalxplab.mx/excel-deck/img/shapes/chevrones.png"></a>
+    <iframe width="700" height="420" src="https://www.youtube.com/embed/s3yaSStoSAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class='simulator'src="https://trinket.io/embed/python/5d92522ed4" width="45%" height="420" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+    </div>
+    <h2 class="texto">
+        Texto:
+    </h2>
+    <p class="texto">
+        <br>
+        Para poder escribir programas útiles, casi siempre vamos a necesitar la capacidad
+de comprobar condiciones y cambiar el comportamiento del programa de acuerdo a
+ellas. Las sentencias condicionales nos proporcionan esa capacidad. La forma
+más sencilla es la sentencia if.
+        <br>
+        La expresión booleana después de la sentencia if recibe el nombre de condición.
+La sentencia if se finaliza con un carácter de dos-puntos (:) y la(s) línea(s) que
+van detrás de la sentencia if van indentadas1
+(es decir, llevan una tabulación o
+varios espacios en blanco al principio).
+Si la condición lógica es verdadera, la sentencia indentada será ejecutada. Si la
+condición es falsa, la sentencia indentada será omitida.
+La sentencia if tiene la misma estructura que la definición de funciones o los
+bucles for.
+. La sentencia consiste en una línea de encabezado que termina con el
+carácter dos-puntos (:) seguido por un bloque indentado. Las sentencias de este
+tipo reciben el nombre de sentencias compuestas, porque se extienden a lo largo
+de varias líneas.
+<br>
+<img src="/assets/usoif.png" >
+<br>
+No hay límite en el número de sentencias que pueden aparecer en el cuerpo, pero
+debe haber al menos una. Ocasionalmente, puede resultar útil tener un cuerpo sin
+sentencias (normalmente como emplazamiento reservado para código que no se ha
+escrito aún). En ese caso, se puede usar la sentencia pass, que no hace nada.
+if x < 0 :
+pass # ¡necesito gestionar los valores negativos!
+<br>
+elif es una abreviatura para “else if”. En este caso también será ejecutada únicamente una de las ramas.
+No hay un límite para el número de sentencias elif. Si hay una clausula else,
+debe ir al final, pero tampoco es obligatorio que ésta exista.
+<br>
+
+<img src="/assets/usodif.png" style="height: 500px;">
+<br>
+Cada condición es comprobada en orden. Si la primera es falsa, se comprueba la
+siguiente y así con las demás. Si una de ellas es verdadera, se ejecuta la rama
+correspondiente, y la sentencia termina. Incluso si hay más de una condición que
+sea verdadera, sólo se ejecuta la primera que se encuentra.
+    </p>
+    <p class="texto">Click en la flecha para iniciar simulador</p>
+    <div class="click" onclick="simulador()">
+        <i class="bi-arrow-down-square" style="font-size:30px" style="color: white;"></i>
+    </div>
+    <button type="button" class="check" id="btn4" onclick="check4()"><P>completar</P></button>
+    <h2 class="texto">
+        Ejemplo: 
+    </h2>
+    <div  id="simulador" style="display: none;">
+    <iframe src="https://trinket.io/embed/python/e5fda92a5e" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+    <script src="code.js"></script>
+    <footer class="p-4 mt-3 d-flex justify-content-center align-items-center">
+        Copyright 2022. Tecmilenio.
+      </footer>
+      </div>
+</body>
+
+
+</html>
