@@ -191,10 +191,21 @@ function usodelif() {
         }
       }
       for (let i = 0; i < icono.length; i++) {
+        if (icono===null) {
+          console.log("null")
+          
+        }
+        else{ 
         document.getElementById(icono[i]).style.display='none';
+        }
       }
       for (let j = 0; j < iconch.length; j++) {
+        if (iconch[j]===null) {
+          console.log("null")
+        }
+        else { 
         document.getElementById(iconch[j]).style.display="block"
+        }
       }
       for (let i = 0; i < universo.length; i++) {
         if (universo[i]==null) {
