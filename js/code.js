@@ -29,7 +29,7 @@ function usodelif() {
   let universo=[]
   let coloruniverso=[]
   let checks=[]
-
+  
   if (check1===null) {
     console.log("null")
   }
@@ -172,13 +172,23 @@ function usodelif() {
     }
     else{ 
       for (let i = 0; i < quizz.length; i++) {
+        if (quizz[i]===null) {
+          console.log("null")
+        }
+        else{ 
         document.getElementById(quizz[i]).style.display='none'
         document.getElementById("instrucciones1").style.display='block'
+        }
       }
       document.getElementById('instrucciones').style.display='block';
       document.getElementById('title').style.display='none';
-      for (let i = 0; i < color.length; i++) {     
+      for (let i = 0; i < color.length; i++) {  
+        if (color[i]===null) {
+          console.log("null")
+        }   
+        else{ 
         document.getElementById(color[i]).style.background='rgb(142, 190, 225)'
+        }
       }
       for (let i = 0; i < icono.length; i++) {
         document.getElementById(icono[i]).style.display='none';
