@@ -10,19 +10,7 @@
 .title{
   margin-left: 20px;
 }
-.check{
-  background-color: #0000AF;
-  color: white;
-  height: 40px;
-  border: 0;
-  border-radius: 10px;
-  float: right;
-  width: 100px;
-  margin-right: 15px;
-}
-.check:hover{
-  transform: scale(1.2);
-}
+
 .color{
   border-radius: 5px;
   height: 15px;
@@ -138,7 +126,7 @@
 }
 
 .divslab{
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
   height: 225px;
   width: 35%;
   border-radius: 10px;
@@ -219,7 +207,7 @@
 .sized{
   position: relative;
   margin: 0 auto;
-  height: 160px;
+  height: 150px;
 }
 .imagenes{
   left: 48%;
@@ -234,6 +222,7 @@
 .resultados:hover{
   transform: scale(1.3);
 }
+
 .instrucciones{
   display: none;
   font-size: 18px;
@@ -273,12 +262,14 @@
   margin-top: 700px;
   
 }
+
 .footer{
   height: 60px;
   text-align: center;
   width: 100%;
   background-color: black;
   color: #cacaca;
+  vertical-align: 20px;
 }
 .divs{
   height: 10px;

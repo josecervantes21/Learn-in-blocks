@@ -1,33 +1,218 @@
+let iconos=[]
 let blocks=[]
 function usodelif() {
   document.location.href = "html/usodelif.html"
 }
 (()=>{
-    const color=JSON.parse(localStorage.getItem("slabs"))
-    const icono=JSON.parse(localStorage.getItem("iconos"))
-    const iconch=JSON.parse(localStorage.getItem("iconch"))
+  const icono=JSON.parse(localStorage.getItem("iconos"))
+  const iconch=JSON.parse(localStorage.getItem("iconch"))
+  const color=JSON.parse(localStorage.getItem("slabs"))
+  const icon1=JSON.parse(localStorage.getItem("icon1"))
+  const icon2=JSON.parse(localStorage.getItem("icon2"))
+  const icon3=JSON.parse(localStorage.getItem("icon3"))
+  const icon4=JSON.parse(localStorage.getItem("icon4"))
+  const icon5=JSON.parse(localStorage.getItem("icon5"))
+  const icon6=JSON.parse(localStorage.getItem("icon6"))
+  const color1=JSON.parse(localStorage.getItem("divslab1"))
+  const color2=JSON.parse(localStorage.getItem("divslab2"))
+  const color3=JSON.parse(localStorage.getItem("divslab3"))
+  const color4=JSON.parse(localStorage.getItem("divslab4"))
+  const color5=JSON.parse(localStorage.getItem("divslab5"))
+  const color6=JSON.parse(localStorage.getItem("divslab6"))
+  const check1=JSON.parse(localStorage.getItem("iconch1"))
+  const check2=JSON.parse(localStorage.getItem("iconch2"))
+  const check3=JSON.parse(localStorage.getItem("iconch3"))
+  const check4=JSON.parse(localStorage.getItem("iconch4"))
+  const check5=JSON.parse(localStorage.getItem("iconch5"))
+  const check6=JSON.parse(localStorage.getItem("iconch6"))
+  let universo=[]
+  let coloruniverso=[]
+  let checks=[]
+
+  if (check1===null) {
+    console.log("null")
+  }
+  else{
+    checks.push(check1)
+  }
+  if (check2===null) {
+    console.log("null")
+  }
+  else{
+    checks.push(check2)
+  }
+  if (check3===null) {
+    console.log("null")
+  }
+  else{
+    checks.push(check3)
+  }
+  if (check4===null) {
+    console.log("null")
+  }
+  else{
+    checks.push(check4)
+  }
+  if (check5===null) {
+    console.log("null")
+  }
+  else{
+    checks.push(check5)
+  }
+  if (check6===null) {
+    console.log("null")
+  }
+  else{
+    checks.push(check6)
+  }
+
+
+  if (color1===null) {
+    console.log("null")
+  }
+  else{
+    coloruniverso.push(color1)
+  }
+  if (color2===null) {
+    console.log("null")
+  }
+  else{
+    coloruniverso.push(color2)
+  }
+  if (color3===null) {
+    console.log("null")
+  }
+  else{
+    coloruniverso.push(color3)
+  }
+  if (color4===null) {
+    console.log("null")
+  }
+  else{
+    coloruniverso.push(color4)
+  }
+  if (color5===null) {
+    console.log("null")
+  }
+  else{
+    coloruniverso.push(color5)
+  }
+  if (color6===null) {
+    console.log("null")
+  }
+  else{
+    coloruniverso.push(color6)
+  }
+
+
+
+
+
+
+  if (icon1===null) {
+    console.log("null")
+  }
+  else{
+    universo.push(icon1)
+  }
+  if (icon2===null) {
+    console.log("null")
+  }
+  else{
+    universo.push(icon2)
+  }
+  if (icon3===null) {
+    console.log("null")
+  }
+  else{
+    universo.push(icon3)
+  }
+  if (icon4===null) {
+    console.log("null")
+  }
+  else{
+    universo.push(icon4)
+  }
+  if (icon5===null) {
+    console.log("null")
+  }
+  else{
+    universo.push(icon5)
+  }
+  if (icon6===null) {
+    console.log("null")
+  }
+  else{
+    universo.push(icon6)
+  }
+
+
+
+
+  console.log(universo)
+  localStorage.setItem("iconosch",JSON.stringify(universo))
+  const done=JSON.parse(localStorage.getItem("iconosch"))
+
+  localStorage.setItem("colores",JSON.stringify(coloruniverso))
+  const colordone=JSON.parse(localStorage.getItem("colores"))
+
+  localStorage.setItem("checks",JSON.stringify(checks))
+  const doneicon=JSON.parse(localStorage.getItem("checks"))
+
+
+
+  
+
+
     if(color===null){
-      console.log(color)
+      console.log("color")
     }
     else{ 
       document.getElementById('instrucciones').style.display='block';
       document.getElementById('title').style.display='none';
-      for (let i = 0; i < color.length; i++) {
+      for (let i = 0; i < color.length; i++) {     
         document.getElementById(color[i]).style.background='rgb(142, 190, 225)'
-        console.log(color[i])
       }
       for (let i = 0; i < icono.length; i++) {
-        console.log(icono[i])
         document.getElementById(icono[i]).style.display='none';
       }
       for (let j = 0; j < iconch.length; j++) {
-        console.log(iconch[j])
         document.getElementById(iconch[j]).style.display="block"
       }
+      for (let i = 0; i < universo.length; i++) {
+        if (universo[i]==null) {
+          console.log(universo[i])
+        }
+        else{
+          for (let j = 0; j < done.length; j++) {
+            document.getElementById(done[j]).style.display="block"
+          }
+        }
+      }
+      for (let i = 0; i < coloruniverso.length; i++) {
+        if (coloruniverso[i]==null) {
+          console.log(coloruniverso[i])
+        }
+        else{
+          for (let j = 0; j < colordone.length; j++) {
+            document.getElementById(colordone[j]).style.background="rgb(238, 238, 238)"
+          }
+        }
+      }
+      for (let i = 0; i < doneicon.length; i++) {
+        if (doneicon[i]==null) {
+          console.log(doneicon[i])
+        }
+        else{
+          for (let j = 0; j < doneicon.length; j++) {
+            document.getElementById(doneicon[j]).style.display='none'
+          }
+        }
+      }
+    }
 
-  }
+  })()
 
-})()
 function usodelfor() {
   document.location.href = "/html/usodelfor.html"
 }
@@ -157,7 +342,6 @@ select_id("btn4").innerHTML = posibles_respuestas[3];
 
 let suspender_botones = false;
 let img=[]
-let iconos=[]
 let iconosch=[]
 function oprimir_btn(i) {
 if (suspender_botones) {
@@ -225,3 +409,4 @@ function quizz() {
   document.getElementById("body").style.background='rgb(182, 181, 179)'
   document.getElementById("container").style.background='rgb(182, 181, 179)'
 }
+

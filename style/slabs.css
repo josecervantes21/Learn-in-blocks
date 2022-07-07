@@ -19,7 +19,22 @@
     width: 20px;
     height: 10px;
     margin-left: 50%;
+    cursor: pointer;
   }
+  .check{
+    background-color: #0000AF;
+    color: white;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    float: right;
+    width: 100px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+.check:hover{
+    transform: scale(1.2);
+}
 .simulator{
     margin: 0 auto;
     float: right;
@@ -40,4 +55,5 @@
 }
 .cimaimagen{
     margin: 10px;
+    cursor: pointer;
 }

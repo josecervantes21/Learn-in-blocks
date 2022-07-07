@@ -1,0 +1,32 @@
+[
+    {
+        "icon":"icon1",
+        "iconch":"iconch1",
+        "check1":"bloque1"
+    },
+    {
+        "icon":"icon2",
+        "iconch":"iconch2",
+        "check2":"bloque2"
+    },
+    {
+        "icon":"icon3",
+        "iconch":"iconch3",
+        "check3":"bloque3"
+    },
+    {
+    "icon":"icon4",
+    "iconch":"iconch4",
+    "check4":"bloque4"
+},
+{
+    "icon":"icon5",
+    "iconch":"iconch5",
+    "check5":"bloque5"
+},
+{ 
+    "icon":"icon6",
+    "iconch":"iconch6",
+    "check6":"bloque6"
+}
+]
