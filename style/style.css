@@ -39,6 +39,43 @@
   margin: 0 auto;
   position: relative;
 }
+.boton-intro{
+  background-color: white; 
+  border: 0px; 
+  cursor: pointer; 
+  float: right;
+  position: relative;
+  margin: 30px;
+}
+.v-intro{
+  margin-top: 30px;
+}
+.texto-intro{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.videos-intro{
+  margin-top: 55px;
+  height: 80%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.text{
+  position: absolute;
+  width: 100%;
+}
+.container-instructions{
+  text-align: center;
+  background-color: white;
+  width: 45vw;
+  height: 20%;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
 .contenedor {
   display: inline-flex;
   flex-direction: column;
@@ -74,6 +111,18 @@
   margin-top: 20px;
   cursor: pointer;
 }
+.instructions1{
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    background: slategrey;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
 .categoria {
   color: white;
   text-align: left;
