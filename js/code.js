@@ -4,6 +4,7 @@ function usodelif() {
   document.location.href = "html/usodelif.html"
 }
 (()=>{
+  const quizz=JSON.parse(localStorage.getItem("quizz"))
   const icono=JSON.parse(localStorage.getItem("iconos"))
   const iconch=JSON.parse(localStorage.getItem("iconch"))
   const color=JSON.parse(localStorage.getItem("slabs"))
@@ -170,6 +171,9 @@ function usodelif() {
       console.log("color")
     }
     else{ 
+      for (let i = 0; i < quizz.length; i++) {
+        document.getElementById(quizz[i]).style.display='none'
+      }
       document.getElementById('instrucciones').style.display='block';
       document.getElementById('title').style.display='none';
       for (let i = 0; i < color.length; i++) {     
@@ -293,6 +297,9 @@ if (preguntas_hechas==7) {
   document.getElementById('title').style.display='none';
   document.getElementById('instrucciones').style.display='block';
   document.getElementById("body").style.background='white'
+  let quizzz=[]
+  quizzz.push("quizz")
+  localStorage.setItem("quizz",JSON.stringify(quizzz))
 }
 
 escogerPregunta(n)
