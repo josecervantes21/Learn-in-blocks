@@ -262,7 +262,28 @@
   margin-top: 700px;
   
 }
-
+.p-4 {
+  padding: 1.5rem!important;
+}
+.mt-3 {
+  margin-top: 1rem!important;
+}
+.align-items-center {
+  align-items: center!important;
+}
+.justify-content-center {
+  justify-content: center!important;
+}
+.d-flex {
+  display: flex!important;
+}
+footer {
+  color: #939596;
+  background: #000;
+}
+.encuesta{
+  display: none;
+}
 .footer{
   height: 60px;
   text-align: center;

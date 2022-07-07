@@ -138,12 +138,14 @@ function usodelif() {
   }
   else{
     universo.push(icon5)
+    document.getElementById("encuesta").style.display='block'
   }
   if (icon6===null) {
     console.log("null")
   }
   else{
     universo.push(icon6)
+    document.getElementById("encuesta").style.display='block'
   }
 
 
