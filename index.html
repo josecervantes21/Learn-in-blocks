@@ -5,6 +5,7 @@
   <title>Learn in blocks</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class='body'id="body">
   <img src="https://cimalxplab.mx/excel-deck/img/logos/lxlab.png" class="cimaimg" style="height: 60px;">
@@ -17,6 +18,17 @@
               <div class="color" style="background-color: rgb(182, 181, 179); margin-top: 10px;"></div>
               <p id="instrucciones" style="margin-left: 25px;margin-top: 10px;">Los bloques de color gris son las habilidades que ya posees por lo cual no hay necesidad de cursarlo.</p></div>
             <div class="quizz" id="quizz" onclick="quizz()" style="color: white;">Toma tú quizz aquí</div>
+            <div class="quizz" id="instrucciones1" onclick="instructions()" style="color: white;display: none;">Da click aqui para conocer las instrucciones</div>
+            <div class="container-instructions" id="instructions">
+              <h1 class="texto-intro">Instrucciones:</h1>
+              <button type="button" style="background-color: white; border: 0px; cursor: pointer; float: right;position: relative;" onclick="cerrar()">
+              <i class="fa fa-close" style="font-size:24px" style="color: black; cursor: pointer;"></i>
+            </button>
+              <div class="videos-intro">
+                <iframe class="v-intro" width="560" height="315" src="https://www.youtube.com/embed/6WXBBNhVIps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              
+            </div>
             <div class="container-quizz" style="display: none;" id="contenedor">
               <div class="puntaje" id="puntaje"></div>
               <div class="encabezado">
